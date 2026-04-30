@@ -28,12 +28,13 @@ main{
 
         h1{
             text-align: center;
+            letter-spacing: 2px;
             font-size: 45px;
             max-width: 950px;
             color: rgb(255, 255, 255);
 
                 span{
-                    color: rgb(216, 179, 240);
+                    color:  #a701b9;
                 }
         }
 }
@@ -46,32 +47,56 @@ main{
 .links a{
     color: rgb(227, 228, 230);
     font-size: 22px;
-    transition: .2s;
+    transition: .3s;
     text-decoration: none;
     padding: 0 25px;
 
      
         i{
-            color:rgb(213, 169, 255);
+            color: #a701b9;
             padding: 0 15px;
         }
 }
+
 a:hover{
-    transform: scale(1);
+    transform:translateY(-5px);
 }
 footer{
     background-color: rgba(171, 165, 182, 0.753);
+    box-shadow: 2px 0 7px 0  rgba(105, 11, 69, 0.714) ;
     padding: 16px 15px;
 }
 
 footer a{
     color: rgb(49, 27, 70);
-    padding: 12px 7px;
+    padding: 12px 5px;
+    
 
         i{  
             color: rgb(227, 228, 230);
             background-color: rgb(74, 15, 114);
-            padding: 5px 7px; 
-            border-radius: 50%;
+            font-size: 14px;
+            padding: 5px 8px; 
+            border-radius: 50px;
+            display: inline-block;
+            transition: .2s;
+        }
+}
+footer a i:hover{
+    transform: scale(1.1);
+    background-color: rgb(89, 48, 128);
+}
+.geral{
+    align-items: center;
+    justify-content:space-between;
+    display: flex;
+}
+.email{
+    color: #f0ecec;
+    font-size: 13px;
+
+        a{
+            color: #f0ecec;
+            font-size: 12px;
         }
 }
