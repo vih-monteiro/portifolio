@@ -100,3 +100,38 @@ footer a i:hover{
             font-size: 12px;
         }
 }
+@media (max-width: 768px) {
+    .title h1{
+            font-size: 25px;
+            
+    }
+    .links{
+    padding: 0 0;
+}
+.links a{
+    font-size: 20px;
+    padding: 0 15px;
+
+     
+        i{
+
+            padding: 0 5px;
+        }
+}
+footer a{
+    padding: 8px 2px;
+    
+
+        i{  
+            font-size: 12px;
+            padding: 5px 8px; 
+        }
+}
+.email{
+    font-size: 10px;
+
+        a{
+            font-size: 10px;
+        }
+}
+}
