@@ -58,22 +58,24 @@ body {
     font-size:  14px;
     color: #e1cbda;
 }
-
-.card a {
-    display: inline-block;
-    margin-top: 10px;
+a{
     text-decoration: none;
-    color: white;
-    background-color: #650943;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.card a:hover {
-    background-color: #370b4a;
+    color: #ffff;
 }
 
 .card:hover {
     transform: translateY(-10px);
+}
+@media (max-width:780px){
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
 }
