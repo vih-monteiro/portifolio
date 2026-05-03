@@ -8,8 +8,8 @@
     outline: none;
 }
 body{
-    background: linear-gradient(67deg, rgb(38, 18, 111), rgba(66, 10, 53, 0.99));
-    color:#fff;
+    background-color: rgb(55, 4, 94);
+    color:#ffff;
 }
 section{
     padding: 20px 40px;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 *{
     margin:0;
     padding: 0;
@@ -6,56 +7,65 @@
     box-sizing: border-box;
     font-family: "Source Serif 4", serif;
 }
+
 body{
-    background: linear-gradient(67deg, rgb(38, 18, 111), rgba(66, 10, 53, 0.99)); 
+    background-color:rgb(55, 4, 94); 
     display: flex;
     height: 100vh;
     flex-direction: column;
 }
+
 .interface{
     padding: 60px 4%;
     margin: 0 auto;
     max-width: 1200px;
 }
+
 header{
     background-color: rgba(55, 4, 94, 0.653);
+    box-shadow: 2px 0 4px 0 rgba(83, 13, 76, 0.714) ;
     padding: 8px 4%;
 }
+
 header .logo{
     padding: 0;
     margin: 0;
 }
+
 header nav{
     text-decoration: none;
     display: flex;
     justify-content: space-between; 
     align-items: center;
 }
+
 header nav .menu{
     list-style: none;
     display: flex;
 }
+
 header nav .menu li{
     display: inline;
     margin-right: 20px;
 }
+
 header nav .menu a{
-    color: rgb(218, 13, 208);
+    color: rgb(228, 0, 202);
     font-size: 20px;
     cursor: default;
 }
-
 
 header img{
     width: 62px;
     height: auto ;
     border-radius: 50px;
 }
+
 main{
     flex: 1;
 }
-.title{
-    height: 50vh;
+
+.text{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -63,15 +73,84 @@ main{
         h1{
             text-align: center;
             letter-spacing: 2px;
-            font-size: 45px;
+            font-size: 42px;
+            font-weight: 530;
             max-width: 950px;
             color: rgb(255, 255, 255);
 
                 span{
-                    color:  rgb(180, 12, 172);
+                    color: rgb(228, 0, 202);
                 }
         }
+    }
+
+/*Animação*/
+
+.title{
+    text-shadow: 2px 0 5px rgb(218, 0, 252);
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    padding: 25px 0;
+    
 }
+
+span{
+    position: relative;
+}
+
+@keyframes mytext{
+    0%,20%{
+        content: "Transformando ideias reais.";
+    }
+    21%,40%{
+        content: "Curiosa por desafios.";
+    }
+    41%,60%{
+        content: "Em constante evolução.";
+    }
+    61%,80%{
+        content: "Detalhes fazem diferença.";
+    }
+    81%,100%{
+        content: "Bem-vindo :)";
+    }
+    
+}
+.title span::before{
+    content: "";
+    color: rgb(228, 4, 206);
+    animation: mytext 20s infinite;
+}
+
+.title span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid rgb(245, 245, 245);
+    right: -10px;
+    animation: digitador .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 15px);
+    background-color: rgb(55, 4, 94);
+}
+
+@keyframes digita{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width:  calc(100% + 15px);
+    }
+}
+
+@keyframes digitador{
+    0%{
+        border-left: 2px solid rgb(55, 4, 94);
+    }
+}
+
+/*fim da animação*/
+
 .links{
     align-items: center;
     justify-content: center;
@@ -87,7 +166,7 @@ main{
 
      
         i{
-            color: rgb(180, 12, 172);
+            color: rgb(228, 0, 202);
             padding: 0 15px;
         }
 }
@@ -96,6 +175,7 @@ a:hover{
     transform:translateY(-5px);
 }
 footer{
+    
     background-color: rgba(55, 4, 94, 0.653);
     box-shadow: 2px 0 4px 0 rgba(83, 13, 76, 0.714) ;
     padding: 16px 15px;
@@ -135,16 +215,28 @@ footer a i:hover{
         }
 }
 @media (max-width: 768px) {
-    .title h1{
-            font-size: 25px;
+    .text h1{
+            padding: 10px 0;
+            font-size: 22px;
             
     }
+    header nav .menu a{
+        font-size: 16px;
+}
+
+
+    .interface{
+        padding: 80px 8%;
+        margin: 0 auto;
+        max-width: 1200px;
+}
+    
     .links{
-    padding: 0 0;
+        padding: 12px 0;
 }
 .links a{
     font-size: 20px;
-    padding: 0 15px;
+    padding: 10px 15px;
 
      
         i{
@@ -153,7 +245,7 @@ footer a i:hover{
         }
 }
 footer a{
-    padding: 8px 2px;
+    padding: 4px 2px;
     
 
         i{  
@@ -167,5 +259,9 @@ footer a{
         a{
             font-size: 10px;
         }
+}
+.title{
+    font-size: 25px;
+    
 }
 }
