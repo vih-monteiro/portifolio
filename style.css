@@ -11,12 +11,12 @@
 body{
     background-color:rgb(55, 4, 94); 
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
 }
 
 .interface{
-    padding: 60px 4%;
+    padding: 40px 4%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -155,7 +155,7 @@ span{
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 .links a{
     color: rgb(227, 228, 230);
