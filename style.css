@@ -248,8 +248,12 @@ footer a i:hover{
             padding: 0 5px;
         }
 }
+
+footer{
+    padding: 20px 4%;
+}
 footer a{
-    padding: 4px 2px;
+    padding: 8px 4px;
     
 
         i{  
@@ -261,7 +265,7 @@ footer a{
     font-size: 10px;
 
         a{
-            font-size: 10px;
+            font-size: 8px;
         }
 }
 .title{
